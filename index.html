@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ----------------------------------------head----------------------------------------------------- -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first page</title>
+    <!-- ------------------------------------style---------------------------------------------------- -->
+    <style>
+        body {
+            background: #ddd;
+
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        @keyframes x {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #picture_bagua {
+
+            width: 400px;
+            height: 400px;
+            border-radius: 200px;
+            position: relative;
+            overflow: hidden;
+            animation: x 1.5s linear;
+            box-shadow: 0px 0px 34px -2px rgba(0, 0, 0, 0.75);
+
+        }
+
+        @media(max-width: 500px) {
+            #picture_bagua {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        #picture_bagua>div:nth-child(1) {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            background: black;
+        }
+
+        #picture_bagua>div:nth-child(2) {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            background: white;
+        }
+
+        #picture_bagua>div:nth-child(3) {
+
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            border-radius: 50%;
+            background: black;
+
+        }
+
+        @media(max-width: 500px) {
+            #picture_bagua>div:nth-child(3) {
+
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 50%;
+                margin-left: -50px;
+                border-radius: 50%;
+                background: black;
+
+            }
+        }
+
+        #picture_bagua>div:nth-child(4) {
+
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            margin-left: -100px;
+            border-radius: 50%;
+            background: white;
+
+        }
+
+        @media(max-width: 500px) {
+            #picture_bagua>div:nth-child(4) {
+
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                margin-left: -50px;
+                border-radius: 50%;
+                background: white;
+
+            }
+        }
+
+        #picture_bagua>div:nth-child(5) {
+
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            top: 70px;
+            margin-left: -25px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        @media(max-width: 500px) {
+            #picture_bagua>div:nth-child(5) {
+
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                left: 50%;
+                top: 35.5px;
+                margin-left: -12.5px;
+                border-radius: 50%;
+                background: white;
+            }
+        }
+
+        #picture_bagua>div:nth-child(6) {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            bottom: 75px;
+            margin-left: -25px;
+            border-radius: 50%;
+            background: black;
+        }
+
+        @media(max-width: 500px) {
+
+            #picture_bagua>div:nth-child(6) {
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                left: 50%;
+                bottom: 37.5px;
+                margin-left: -12.5px;
+                border-radius: 50%;
+                background: black;
+            }
+
+
+        }
+
+        #bagua_wrapper {
+            /* border: 1px solid green; */
+            height: 100vh;
+            /*viewpoint height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #bagua_discription {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<!-- ------------------------------------------body----------------------------------------------- -->
+
+<body>
+    <div id="bagua_wrapper">
+        <div id="picture_bagua">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+        <div id="bagua_discription">
+            道可道，非常道
+        </div>
+
+    </div>
+
+</body>
+
+</html>
